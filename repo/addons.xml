@@ -127,7 +127,10 @@
 - Release inicial.</news>
   </extension>
 </addon>
-  <addon id="repository.oldsalt" name="Old Salt Repository" version="1.4" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.4" provider-name="Jax">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
   <extension point="xbmc.addon.repository" name="Old Salt Repository">
       <dir>
           <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
@@ -212,26 +215,30 @@
       </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-  	<summary>Handy Add-ons and Utilities</summary>
-      <description>This and that with a few other things to sail the high seas</description>
-      <assets>
-          <icon>icon.png</icon>
-          <fanart>fanart.jpg</fanart>
-      </assets>
+    <platform>all</platform>
+    <summary lang="en">Handy Add-ons and Utilities</summary>
+    <description lang="en">This and that with a few other things to sail the high seas</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
-  </addon>
-  <addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.1" provider-name="CocoScrapers">
-      <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
-          <dir minversion="19.0">
-              <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
-              <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
-              <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
-          </dir>
-      </extension>
-      <extension point="xbmc.addon.metadata">
-          <platform>all</platform>
-          <summary>CocoScrapers Repository</summary>
-          <description>Unofficial add-ons repository</description>
-      </extension>
-  </addon>
+</addon>
+<addon id="repository.cocoscrapers" name="CocoScrapers Repository" version="1.0.1" provider-name="CocoScrapers">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="CocoScrapers Repository">
+    <dir minversion="19.0">
+      <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">CocoScrapers Repository</summary>
+    <description lang="en">Unofficial add-ons repository</description>
+  </extension>
+</addon>
 </addons>
