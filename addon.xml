@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="repository.kraken" name="Kraken Repository" version="1.0.3" provider-name="kraken-dev">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Kraken Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/kraken-project/kraken/refs/heads/main/repo/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/kraken-project/kraken/refs/heads/main/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/kraken-project/kraken/refs/heads/main/repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Kraken add-on repository (GitLab)</summary>
+    <summary lang="es_ES">Repositorio del complemento Kraken (GitLab)</summary>
+    <description lang="en_GB">Adds the Kraken feed so Kodi can install and update the video add-on from your GitLab-hosted repo.</description>
+    <description lang="es_ES">Añade la fuente de Kraken para instalar y actualizar el complemento de vídeo desde tu repositorio en GitLab.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
