@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.kraken" name="Kraken" version="0.1.0" provider-name="kraken-dev">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="inputstream.adaptive" version="19.0.0" optional="true"/>
+    <import addon="inputstream.ffmpegdirect" version="19.0.0" optional="true"/>
+    <import addon="script.module.routing" version="0.2.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.script" library="resources/lib/kraken_opensettings.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es_ES">Addon modular de video para Kodi</summary>
+    <summary lang="en_GB">Modular video addon for Kodi</summary>
+    <summary lang="en_US">Modular video addon for Kodi</summary>
+    <summary lang="fr_FR">Addon vidéo modulaire pour Kodi</summary>
+    <summary lang="it_IT">Addon video modulare per Kodi</summary>
+    <summary lang="de_DE">Modulares Video-Addon für Kodi</summary>
+    <description lang="es_ES">Kraken es una base modular para integrar proveedores legales de catalogo y reproduccion.</description>
+    <description lang="en_GB">Kraken is a modular foundation to integrate legal catalog and playback providers.</description>
+    <description lang="en_US">Kraken is a modular foundation to integrate legal catalog and playback providers.</description>
+    <description lang="fr_FR">Kraken est une base modulaire pour intégrer des fournisseurs légaux de catalogue et de lecture.</description>
+    <description lang="it_IT">Kraken è una base modulare per integrare provider legali di catalogo e riproduzione.</description>
+    <description lang="de_DE">Kraken ist eine modulare Grundlage zur Integration legaler Katalog- und Wiedergabeanbieter.</description>
+    <disclaimer lang="es_ES">El usuario es el único responsable del contenido que reproduce y del cumplimiento de las leyes y del derecho de autor en su país. Kraken no aloja ni distribuye obras; es un software que permite conectar fuentes y servicios que tú configures. Úsalo solo con contenido y proveedores legalmente autorizados.</disclaimer>
+    <disclaimer lang="en_GB">You are solely responsible for what you play and for complying with copyright and applicable laws in your region. Kraken does not host or supply media; it is a tool to access sources you enable. Use only content and providers you are legally entitled to use.</disclaimer>
+    <disclaimer lang="en_US">You are solely responsible for what you play and for complying with copyright and applicable laws in your region. Kraken does not host or supply media; it is a tool to access sources you enable. Use only content and providers you are legally entitled to use.</disclaimer>
+    <disclaimer lang="fr_FR">Vous êtes seul responsable du contenu visionné et du respect du droit d'auteur et des lois applicables. Kraken n'héberge pas de médias ; il permet d'accéder aux sources que vous configurez. Utilisez uniquement des contenus et fournisseurs légaux.</disclaimer>
+    <disclaimer lang="it_IT">L'utente è l'unico responsabile di ciò che riproduce e del rispetto di leggi e copyright applicabili. Kraken non ospita contenuti; è uno strumento per accedere alle fonti che abiliti. Usare solo contenuti e fornitori consentiti dalla legge.</disclaimer>
+    <disclaimer lang="de_DE">Sie sind allein verantwortlich für die Wiedergabe und die Einhaltung von Urheberrecht und geltendem Recht. Kraken hostet keine Medien; es ist ein Werkzeug für von Ihnen aktivierte Quellen. Nutzen Sie nur legale Inhalte und Anbieter.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+</addons>
